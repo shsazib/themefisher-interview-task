@@ -1,0 +1,24 @@
+.dm_sans {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.bg_image {
+    @apply w-full h-full bg-cover bg-repeat-y bg-center text-white bg-body_bg dm_sans;
+    background-image: url('../images/background.svg');
+}
+
+
+// gradient color
+.bg_gradient_color {
+    @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222];
+}
+.text_gradient_color {
+        background: linear-gradient(to right, #F5BD4D, #F89222);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

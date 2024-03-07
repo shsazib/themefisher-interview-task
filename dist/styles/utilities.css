@@ -1,0 +1,37 @@
+.dm_sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bg_image {
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 22 22 / var(--tw-bg-opacity));
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-image: url("../images/background.svg");
+}
+
+.bg_gradient_color {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #F5BD4D var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(245 189 77 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #F89222 var(--tw-gradient-to-position);
+}
+
+.text_gradient_color {
+  background: linear-gradient(to right, #F5BD4D, #F89222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
