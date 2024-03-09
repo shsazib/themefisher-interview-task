@@ -8,7 +8,7 @@
 
 
 .bg_image {
-    @apply w-full h-full bg-cover bg-repeat-y bg-center text-white bg-body_bg dm_sans;
+    @apply w-full h-full bg-contain bg-repeat-y bg-center text-white bg-body_bg dm_sans;
     background-image: url('../images/background.svg');
 }
 
@@ -17,8 +17,89 @@
 .bg_gradient_color {
     @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222];
 }
-.text_gradient_color {
-        background: linear-gradient(to right, #F5BD4D, #F89222);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+.bg_pricing_gradient_color {
+    @apply bg-gradient-to-r from-[#F892224D]/30 to-[#F89222]/30;
 }
+
+.text_gradient_color {
+    background: linear-gradient(to right, #F5BD4D, #F89222);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+.portfolio_tab {
+    @apply px-2 py-3;
+}
+
+
+.portfolio_tabs span.active,
+.portfolio_tabs span:hover {
+    @apply text-[#F89222] border-b-2 border-[#F89222] cursor-pointer;
+}
+
+
+.gallery .image img {
+    @apply w-full align-middle; 
+    transition: all 0.3s ease;
+}
+
+.gallery .image:hover img {
+    transform: scale(1.1);
+}
+
+.gallery .image.hide {
+    display: none;
+}
+
+.gallery .image.show {
+    animation: animate 0.4s ease;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+ 
+
+
+
+// .gallery .image img {
+//     @apply w-full align-middle transition-all duration-300 ease-linear;
+// }
+
+// .gallery .image:hover img {
+//     @apply scale-110;
+// }
+
+// .gallery .image.hide {
+//     @apply hidden;
+// }
+
+// .gallery .image.show {
+//     animation: animate 0.4s ease;
+// }
+
+// @keyframes animate {
+//     0% {
+//         @apply scale-50;
+//     }
+
+//     100% {
+//         @apply scale-100;
+//     }
+// }
