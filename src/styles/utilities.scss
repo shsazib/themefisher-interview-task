@@ -1,3 +1,4 @@
+// google font
 .dm_sans {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
@@ -10,6 +11,7 @@ body {
 }
 
 
+// Background Image
 .bg_image {
     @apply w-full h-full bg-contain bg-repeat-y bg-inherit bg-body_bg;
     background-image: url('../images/background.svg');
@@ -36,17 +38,15 @@ body {
 
 
 
-
+// portfolio tabs
 .portfolio_tab {
     @apply px-2 py-3;
 }
-
 
 .portfolio_tabs span.active,
 .portfolio_tabs span:hover {
     @apply text-[#F89222] border-b-2 border-[#F89222] cursor-pointer;
 }
-
 
 .gallery .image img {
     @apply w-full align-middle;
@@ -58,7 +58,7 @@ body {
 }
 
 .gallery .image.hide {
-    display: none;
+    @apply hidden;
 }
 
 .gallery .image.show {
@@ -76,7 +76,7 @@ body {
 }
 
 
-
+// hamburger
 .group .group_hamburger_1 {
     @apply ring-4;
 
@@ -85,39 +85,18 @@ body {
 
         .group_hamburger_3 {
             @apply -rotate-90 h-[1px] -translate-y-[1px];
-        };
+        }
+
+        ;
 
         .group_hamburger_4 {
             @apply -rotate-90 h-[1px] translate-y-[1px];
-        };
-    };
-};
+        }
 
+        ;
+    }
 
+    ;
+}
 
-
-// .gallery .image img {
-//     @apply w-full align-middle transition-all duration-300 ease-linear;
-// }
-
-// .gallery .image:hover img {
-//     @apply scale-110;
-// }
-
-// .gallery .image.hide {
-//     @apply hidden;
-// }
-
-// .gallery .image.show {
-//     animation: animate 0.4s ease;
-// }
-
-// @keyframes animate {
-//     0% {
-//         @apply scale-50;
-//     }
-
-//     100% {
-//         @apply scale-100;
-//     }
-// }
+;
