@@ -27,3 +27,34 @@ window.onload = ()=>{
   }
 }
 
+
+
+
+const group_active = document.querySelector('.group_active');
+const phone_navbar_active = document.querySelectorAll('.phone_navbar_active');
+const phone_navbar_active_bg = document.querySelector('.phone_navbar_active_bg');
+
+function toggleClasses() {
+    if (group_active.classList.contains("group")) {
+        group_active.classList.remove("group");
+        phone_navbar_active.forEach(element => {
+            element.classList.remove("right-0");
+            element.classList.add("-right-full");
+        });
+    } else {
+        group_active.classList.add("group");
+        phone_navbar_active.forEach(element => {
+            element.classList.add("right-0");
+            element.classList.remove("-right-full");
+        });
+    }
+}
+
+group_active.addEventListener("click", toggleClasses);
+phone_navbar_active_bg.addEventListener("click", toggleClasses);
+
+
+
+
+
+

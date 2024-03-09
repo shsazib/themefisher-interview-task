@@ -5,10 +5,13 @@
     font-style: normal;
 }
 
+body {
+    @apply text-white dm_sans;
+}
 
 
 .bg_image {
-    @apply w-full h-full bg-contain bg-repeat-y bg-center text-white bg-body_bg dm_sans;
+    @apply w-full h-full bg-contain bg-repeat-y bg-inherit bg-body_bg;
     background-image: url('../images/background.svg');
 }
 
@@ -17,6 +20,7 @@
 .bg_gradient_color {
     @apply bg-gradient-to-r from-[#F5BD4D] to-[#F89222];
 }
+
 .bg_pricing_gradient_color {
     @apply bg-gradient-to-r from-[#F892224D]/30 to-[#F89222]/30;
 }
@@ -45,7 +49,7 @@
 
 
 .gallery .image img {
-    @apply w-full align-middle; 
+    @apply w-full align-middle;
     transition: all 0.3s ease;
 }
 
@@ -73,8 +77,22 @@
 
 
 
+.group .group_hamburger_1 {
+    @apply ring-4;
 
- 
+    .group_hamburger_2 {
+        @apply -rotate-[45deg];
+
+        .group_hamburger_3 {
+            @apply -rotate-90 h-[1px] -translate-y-[1px];
+        };
+
+        .group_hamburger_4 {
+            @apply -rotate-90 h-[1px] translate-y-[1px];
+        };
+    };
+};
+
 
 
 
