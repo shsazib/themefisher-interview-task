@@ -1,2 +1,10 @@
 # dependencies
 /node_modules
+/package-lock.json
+
+# production
+/dist
+
+# local files
+.env
+.zip

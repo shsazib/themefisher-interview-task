@@ -4,6 +4,7 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 const browser_sync = require("browser-sync").create();
 
+//pages
 gulp.task("pages", function () {
   return gulp
     .src("src/pages/**/*.html")
@@ -15,6 +16,7 @@ gulp.task("pages", function () {
     );
 });
 
+//styles
 gulp.task("styles", function () {
   return gulp
     .src("src/styles/**/*.scss")
@@ -34,11 +36,12 @@ gulp.task("styles", function () {
     );
 });
 
-// public files
+// Public Files
 gulp.task("public", function () {
-  return gulp.src('src/public/images/**/*').pipe(gulp.dest('dist/images/'));
+  return gulp.src("src/public/images/**/*").pipe(gulp.dest("dist/images/"));
 });
 
+// Script Task
 gulp.task("scripts", function () {
   return gulp
     .src("src/scripts/**/*.js")
@@ -50,15 +53,15 @@ gulp.task("scripts", function () {
     );
 });
 
-
+// Watch Task
 gulp.task("watch", function () {
   gulp.watch("src/pages/**/*.html", gulp.parallel("pages", "styles"));
   gulp.watch("src/styles/**/*.scss", gulp.parallel("styles"));
   gulp.watch("src/scripts/**/*.js", gulp.parallel("scripts", "styles"));
-  gulp.watch('src/public/images/**/*', gulp.parallel("public", "styles"));
+  gulp.watch("src/public/images/**/*", gulp.parallel("public", "styles"));
 });
 
-
+//Dev Task
 gulp.task(
   "dev",
   gulp.series(
@@ -76,7 +79,5 @@ gulp.task(
   )
 );
 
-gulp.task(
-  "build",
-  gulp.series("pages", "styles","scripts", "public")
-);
+// Build Task
+gulp.task("build", gulp.series("pages", "styles", "scripts", "public"));
