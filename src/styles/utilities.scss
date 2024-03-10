@@ -34,10 +34,6 @@ body {
 }
 
 
-
-
-
-
 // portfolio tabs
 .portfolio_tab {
     @apply px-2 py-3;
@@ -85,18 +81,10 @@ body {
 
         .group_hamburger_3 {
             @apply -rotate-90 h-[1px] -translate-y-[1px];
-        }
-
-        ;
+        };
 
         .group_hamburger_4 {
             @apply -rotate-90 h-[1px] translate-y-[1px];
-        }
-
-        ;
-    }
-
-    ;
-}
-
-;
+        };
+    };
+};
