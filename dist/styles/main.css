@@ -761,9 +761,6 @@ video {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
 .grid-cols-\[40px_minmax\(40px\2c _1fr\)\] {
   grid-template-columns: 40px minmax(40px, 1fr);
 }
@@ -1195,12 +1192,13 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 body {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 100;
     font-style: normal;
 }
 .bg_gradient_color {
@@ -1378,10 +1376,6 @@ body {
 
   .sm\:h-\[16px\] {
     height: 16px;
-  }
-
-  .sm\:h-full {
-    height: 100%;
   }
 
   .sm\:columns-2 {

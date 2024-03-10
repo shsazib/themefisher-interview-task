@@ -13,11 +13,6 @@
     <!-- title -->
     <title>Daryl Smith</title>
 
-    <!-- google font css -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -27,9 +22,7 @@
 </head>
 
 <body class="xl:bg_image ">
-
     <div class="text-8xl absolute top-4 font-bold left-10 text-[#232424] hidden xl:block">Contact</div>
-
     <main class="w-full xl:container mx-auto xl:my-20 bg-main_bg xl:shadow-[0_8px_30px_rgb(0,0,0,0.20)] xl:shadow-white/30 grid xl:grid-cols-3">
         <div class="xl:col-span-1">
             <section class="w-full h-[6.6rem] flex justify-between xl:grid items-center px-5 xl:pl-[72px] xl:pr-7 bg-[#121414] relative">
@@ -43,13 +36,13 @@
 
                 <!-- Menu Toggler Icon -->
                 <button id="group_active" class="focus:outline-none xl:hidden z-[100] fixed right-5" title="Menu Toggler">
-                    <div class="relative flex items-center justify-center rounded-xl w-[45px] h-[45px] transform transition-all bg_gradient_color ring-0 ring-[#F89222]/30 hover:ring-8 group_hamburger_1 ring-opacity-30 duration-200 shadow-[0_0px_30px_rgb(0,0,0,0.20)] shadow-white">
-                        <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 group_hamburger_2 origin-center">
-                            <div class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group_hamburger_3 origin-right delay-75 "></div>
-                            <div class="bg-white h-[1px] rounded"></div>
-                            <div class="bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300 origin-left delay-75 group_hamburger_4"></div>
-                        </div>
-                    </div>
+                    <span class="relative flex items-center justify-center rounded-xl w-[45px] h-[45px] transform transition-all bg_gradient_color ring-0 ring-[#F89222]/30 hover:ring-8 group_hamburger_1 ring-opacity-30 duration-200 shadow-[0_0px_30px_rgb(0,0,0,0.20)] shadow-white">
+                        <span class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 group_hamburger_2 origin-center">
+                            <span class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group_hamburger_3 origin-right delay-75 "></span>
+                            <span class="bg-white h-[1px] rounded"></span>
+                            <span class="bg-white h-[2px] w-1/2 rounded self-end transform transition-all duration-300 origin-left delay-75 group_hamburger_4"></span>
+                        </span>
+                    </span>
                 </button>
 
 
@@ -84,7 +77,7 @@
                                 </li>
                             </ul>
                             <div class="bg_gradient_color inline-block rounded-full mt-5 hover:shadow-[0_5px_20px_rgb(0,0,0,0.10)] hover:shadow-[#F89222]">
-                                <a rel="nofollow" href="images/cv of sh sazib.pdf" class="flex items-center gap-2 px-6 py-3" download>
+                                <a rel="nofollow" href="images/cv-of-sh-sazib.pdf" class="flex items-center gap-2 px-6 py-3" download>
                                     Downdolad CV
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -134,7 +127,7 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.67908 4.03508C7.35982 4.11605 6.34434 4.72735 5.84413 5.13961C4.49794 6.24909 3.52769 7.86716 3.15414 9.62555C2.93772 10.6442 2.95051 12.2479 3.18425 13.3949C3.42264 14.5647 3.76108 15.5378 4.3178 16.6544C4.75389 17.529 7.72064 22.6263 8.17121 23.2751C10.1289 26.094 12.8053 27.8084 15.517 27.9805C17.2304 28.0892 18.7347 27.7442 20.1 26.9293C20.6064 26.627 20.7389 26.5173 20.8848 26.2791C21.0531 26.0042 21.0601 25.9664 21.0561 25.349C21.0525 24.7926 21.0299 24.6465 20.8889 24.2695C20.6531 23.6388 20.3529 23.0636 19.8117 22.2059C19.0049 20.9269 18.5497 20.3974 17.8906 19.9714C17.3857 19.645 17.0019 19.5412 16.4151 19.5721C15.873 19.6007 15.5969 19.71 14.6368 20.2763C14.0573 20.6182 14.0074 20.6363 13.6486 20.6362C13.1784 20.636 12.7365 20.4304 12.354 20.034C12.181 19.8547 11.6264 18.956 10.6988 17.352C9.93152 16.0251 9.25639 14.848 9.19849 14.7361C9.04369 14.4368 9.01091 13.5928 9.14089 13.2525C9.2697 12.9153 9.4384 12.7627 10.1349 12.3538L10.71 12.016L10.804 12.1699C10.9567 12.4197 17.0412 17.1747 17.5095 17.4101C17.8812 17.5969 17.9548 17.6132 18.4118 17.6095C18.815 17.6062 18.9701 17.5776 19.2291 17.4587C19.4304 17.3663 21.1103 16.0855 23.7633 14.0016C26.0813 12.1808 28.0105 10.6711 28.0505 10.6466C28.1084 10.611 28.1231 11.7052 28.1231 16.0432V21.4845L27.9804 21.6272L27.8378 21.7699L24.8268 21.7702C22.8928 21.7704 21.7369 21.7925 21.5949 21.8319C21.1573 21.9534 21.0092 22.4853 21.3171 22.8298L21.4868 23.0197H24.7613C27.9946 23.0197 28.0394 23.0181 28.3077 22.8941C28.6904 22.7172 29.0766 22.3406 29.2221 22.0024L29.346 21.7144L29.3304 15.5658L29.3148 9.41715L29.1557 9.14655C28.9623 8.81759 28.6248 8.54095 28.2371 8.39365C27.958 8.28756 27.6528 8.2836 19.7931 8.2836H11.6388L11.127 7.28085C10.4995 6.05168 10.0907 5.42701 9.52908 4.83908C8.90261 4.18325 8.23632 3.8937 7.67908 4.03508ZM8.33706 5.4262C8.79385 5.75708 9.294 6.46586 9.94326 7.7023C10.4576 8.68168 10.6924 9.35815 10.7002 9.88219C10.7101 10.5612 10.6564 10.6192 9.29609 11.3974C8.42175 11.8976 8.05954 12.3539 7.85771 13.2096C7.74186 13.7009 7.77999 14.5124 7.94037 14.9686C8.04321 15.261 10.7691 20.0247 11.1557 20.5876C11.5201 21.118 12.2602 21.6241 12.9244 21.7971C13.3704 21.9133 14.0367 21.9109 14.3877 21.7918C14.5407 21.7399 15.006 21.5006 15.4216 21.2601C16.3117 20.745 16.5943 20.6807 17.0183 20.8969C17.565 21.1759 18.1577 21.8744 18.9259 23.1451C19.4582 24.0256 19.7408 24.6647 19.831 25.1914C19.9054 25.6255 19.9072 25.6231 19.2061 26.0101C17.546 26.9265 15.2873 27.0112 13.4695 26.2252C11.831 25.5169 10.2848 24.1734 9.11914 22.4452C8.73967 21.8827 5.76356 16.7539 5.43844 16.1022C4.05975 13.3389 3.86176 10.4664 4.90154 8.31267C5.23789 7.61598 5.56504 7.1729 6.23221 6.51062C6.70969 6.03668 7.0118 5.7923 7.39959 5.56641C7.68733 5.39876 7.96461 5.2614 8.01577 5.26122C8.06692 5.26099 8.21149 5.33522 8.33706 5.4262ZM27.3936 9.55597C27.3176 9.62694 19.4489 15.8024 19.067 16.0909C18.7005 16.3676 18.319 16.4372 18.019 16.282C17.9183 16.23 16.4745 15.118 14.8104 13.8109C13.1464 12.5039 11.7338 11.3991 11.6713 11.3559C11.5602 11.2791 11.5617 11.2693 11.7384 10.9165C11.888 10.6177 11.9242 10.4653 11.949 10.03L11.9789 9.50435H19.7139C24.2204 9.50435 27.4257 9.52585 27.3936 9.55597Z" fill="url(#paint0_linear_1_858)" />
                                 <defs>
                                     <linearGradient id="paint0_linear_1_858" x1="4" y1="10.6572" x2="27.9778" y2="10.5366" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#F5BD4D" />
+                                        <stop offset="0" stop-color="#F5BD4D" />
                                         <stop offset="1" stop-color="#F89222" />
                                     </linearGradient>
                                 </defs>
@@ -169,6 +162,7 @@
             </nav>
         </div>
 
+        <!-- Contact Section -->
         <div class="xl:col-span-2">
             <section class="w-full h-[6.6rem] grid items-center px-5 xl:pl-7 xl:pr-[72px] bg-[#121414]">
                 <div class="flex justify-between items-center">
@@ -184,8 +178,6 @@
                     </a>
                 </div>
             </section>
-
-
 
 
             <section class="p-5 xl:pl-7 xl:pr-[72px]">
