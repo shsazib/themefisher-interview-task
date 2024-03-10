@@ -1,15 +1,26 @@
-##-----Get started-----##
+### 👉 Get started 👈 ###
 
-=>Dependency
+# Dependency 👇
 
--node v18+
--npm v9.5+
--gulp v4+
+- node v18+
+- npm v9.5+
+- gulp v4+
 
 
-=>Package Installation
+# Package Installation 👇
+
+```
 npm install
+```
 
+# Development Command 👇
 
-=>Development Command
+```
 npm run dev
+```
+
+# Build Command 👇
+
+```
+npm run build
+```
